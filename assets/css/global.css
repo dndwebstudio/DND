@@ -1,0 +1,172 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+ul {
+  list-style: none;
+  padding-left: 15px;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+header {
+  margin-bottom: 50px;
+}
+.header {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center;
+}
+.container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  padding: 0 calc(50vw - 590px);
+}
+.main-menu .main-menu-item {
+  margin-bottom: 10px;
+  position: relative;
+}
+.main-menu .main-menu-item.active {
+  font-weight: 600;
+  padding-left: 5px;
+}
+.main-menu .main-menu-item.active :after {
+  content: '';
+  width: 75px;
+  height: 3px;
+  background-color: #000;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  right: 0;
+}
+.main-menu .main-menu-item a {
+  font-size: 21px;
+  transition: 0.4s;
+}
+.main-menu .main-menu-item a:hover {
+  color: #3a3d82;
+}
+.logo {
+  margin: 35px 0;
+}
+.logo img {
+  width: 250px;
+  height: 58px;
+}
+.logo-design {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 75px 0 50px;
+}
+.logo-design .dnd {
+  font-weight: 700;
+  background: #3a3d82;
+  width: 80px;
+  height: 45px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
+  -moz-justify-content: flex-end;
+  justify-content: flex-end;
+  color: #fff;
+}
+.logo-design .creativelab {
+  padding: 5px;
+  font-weight: 100;
+  background: linear-gradient(76.55deg, #575757 -7.93%, #c6c6c6 86.92%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.barcode-title {
+  writing-mode: tb-rl;
+  transform: rotate(180deg);
+  font-weight: 600;
+}
+.barcode-title h1 {
+  font-size: 18px;
+  margin: 0;
+}
+.barcode-section img {
+  height: 220px;
+  margin-top: 35px;
+  width: 50px;
+}
+.contact-group {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.contact-group .phone {
+  font-weight: 900;
+  font-size: 32px;
+}
+.contact-group .mail {
+  font-weight: 700;
+  font-size: 18px;
+  color: #008756;
+}
+.social-group .telegram a {
+  color: #027eb5;
+  font-size: 74px;
+  font-weight: 800;
+}
+.social-group .whatsapp a {
+  color: #008a0c;
+  font-size: 54px;
+  font-weight: 800;
+}
+.social-group .instagram a {
+  font-size: 38px;
+  font-weight: 800;
+  background: linear-gradient(87.79deg, #f58529 -56.81%, #ed8279 -11.19%, #dd2a7b 37.16%, #8134af 78.21%, #515bd4 118.35%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.section-contacts .left-block .decoration-block {
+  width: 90px;
+  height: 100%;
+  margin-right: 35px;
+  background-color: #ccc;
+}

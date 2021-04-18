@@ -1,0 +1,73 @@
+@import './mixin';
+@import './flex';
+
+.portfolio-section .portfolio .portfolio-list .portfolio-element
+  flexbox()
+  margin-bottom 35px
+  .big-picture
+    width 325px
+    height 325px
+    border-radius(10%)
+    cursor pointer
+  .content
+    padding-left 35px
+    flexbox()
+    flex-flow(column)
+    justify-content(center)
+    .title
+      font-size 32px
+      font-weight 900
+      margin-bottom 10px
+      cursor pointer
+    .description
+      font-size 14px
+      font-weight 100
+      margin-bottom 10px
+      color #4F4F4F
+    .tag
+      margin-bottom 25px
+      span
+        color #273175
+        font-weight 500
+        cursor pointer
+        margin-right 3px
+  .small-gallery
+    flexbox()
+    .small-gallery-element
+      width 150px
+      height 150px
+      border-radius(10px)
+      margin-right 25px
+      cursor pointer
+      &:last-child
+        margin-right 0
+
+@media screen and (max-width 1200px)
+  .portfolio-section .portfolio .portfolio-list .portfolio-element
+    .big-picture
+      width 275px
+      height 275px
+    .small-gallery
+      .small-gallery-element
+        width 125px
+        height 125px
+
+@media screen and (max-width 991px)
+  .portfolio-section .portfolio .portfolio-list .portfolio-element
+    .big-picture
+      display none
+    .content
+      padding-left 0
+    .small-gallery
+      .small-gallery-element
+        width 150px
+        height 150px
+
+@media screen and (max-width 768px)
+  .header
+    display none
+  .portfolio-section .portfolio .portfolio-list .portfolio-element
+    .small-gallery
+      .small-gallery-element
+        width 225px
+        height 225px

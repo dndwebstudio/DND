@@ -1,0 +1,122 @@
+@import './mixin'
+@import './flex'
+
+body
+  margin 0
+  font-family 'Montserrat', sans-serif
+
+ul
+  list-style none
+  padding-left 15px
+
+a
+  color #333333
+  text-decoration none
+
+header
+  margin-bottom 50px
+
+.header
+  width 100%
+  flexbox()
+  justify-content(space-between)
+  align-items(center)
+
+.container
+  flexbox()
+  margin auto
+  padding 0 calc(50vw - 590px)
+
+.main-menu .main-menu-item
+  margin-bottom 10px
+  position relative
+  &.active
+    font-weight 600
+    padding-left 5px
+    :after
+      content ''
+      width 75px
+      height 3px
+      background-color #000
+      position absolute
+      bottom 0
+      top 0
+      margin auto
+      right 0
+  a
+    font-size 21px
+    transition 0.4s
+    &:hover
+      color #3A3D82
+
+.logo
+  margin 35px 0
+  img
+    width 250px
+    height 58px
+
+.logo-design
+  flexbox()
+  margin 75px 0 50px
+  .dnd
+    font-weight 700
+    background #3A3D82
+    width 80px
+    height 45px
+    flexbox()
+    padding 5px
+    justify-content(flex-end)
+    color #fff
+  .creativelab
+    padding 5px
+    font-weight 100
+    background linear-gradient(76.55deg, #575757 -7.93%, #C6C6C6 86.92%)
+    -webkit-background-clip text
+    -webkit-text-fill-color transparent
+
+.barcode-title
+  writing-mode tb-rl
+  transform rotate(180deg)
+  font-weight 600
+  h1
+    font-size 18px
+    margin 0
+
+.barcode-section img
+  height 220px
+  margin-top 35px
+  width 50px
+
+.contact-group
+  flexbox()
+  flex-direction(column)
+  .phone
+    font-weight 900
+    font-size 32px
+  .mail
+    font-weight 700
+    font-size 18px
+    color #008756
+
+.social-group
+  .telegram a
+    color #027eb5
+    font-size 74px
+    font-weight 800
+  .whatsapp a
+    color #008a0c
+    font-size 54px
+    font-weight 800
+  .instagram a
+    font-size 38px
+    font-weight 800
+    background linear-gradient(87.79deg, #F58529 -56.81%, #ED8279 -11.19%, #DD2A7B 37.16%, #8134AF 78.21%, #515BD4 118.35%)
+    -webkit-background-clip text
+    -webkit-text-fill-color transparent
+
+.section-contacts .left-block .decoration-block {
+  width 90px
+  height 100%
+  margin-right 35px
+  background-color #CCCCCC
+}
