@@ -40,8 +40,11 @@
     <div class="container">
       <div class="header">
         <div class="left-block">
-          <div class="logo">
-            <img src="/images/logo-dnd-alt.svg" alt="Логотип">
+          <div class="logo" id="logo">
+            <img src="/images/logo.svg" alt="Логотип">
+            <span class="logo-description">
+                   дизигн <span>& { коддинг }</span>
+             </span>
           </div>
           <nav>
             <ul class="main-menu">

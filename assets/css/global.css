@@ -70,10 +70,22 @@ header {
 }
 .logo {
   margin: 35px 0;
+  position: relative;
 }
 .logo img {
   width: 250px;
   height: 58px;
+}
+.logo .logo-description {
+  position: absolute;
+  left: 0;
+  font-weight: 800;
+  font-size: 14px;
+  color: #3b3d82;
+  top: -5px;
+}
+.logo .logo-description span {
+  color: #252525;
 }
 .logo-design {
   display: -webkit-box;
